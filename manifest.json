@@ -1,0 +1,31 @@
+{
+  "name": "EmailReadMautic",
+  "version": "0.1",
+  "description": "ReadMautic",
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "jquery-1.10.2.min.js",
+    "gmail.js",
+    "main.js"
+  ],
+  "background": {
+    "scripts": [
+      "./background.js"
+    ]
+  },
+  "permissions": [
+        "*://*.bitler.co/*",
+        "http://localhost:3000/*",
+        "*://mail.google.com/*",
+        "storage"
+    ],
+  "externally_connectable": {
+      "matches": ["*://*.bitler.co/*", "*://mail.google.com/*", "http://localhost:3000/*" ]
+      },
+  "manifest_version": 2
+}
