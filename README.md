@@ -1,7 +1,4 @@
-# Add reply email option to mautic
-
-
-This chrome extension makes it possible to add a reply to email condition field in mautic campaigns
+# This chrome extension makes it possible to add a reply to email condition field for mautic campaigns. So of someone replyed to your email different actions are taken.
 
 Some point to get it working, you will need to change the 
 * 1) in mautic set a costum profile field with the name :"answeremail", this field need ot be a boolean. (yes/no)
@@ -14,3 +11,4 @@ Some point to get it working, you will need to change the
 notes:
 - autoresponders will also get the read email field status to true. IMAP integration would be a better solution as then a responsetime of autoresponders can then be detected.
 - at Mautic their are setting this features on the roadmap. So a more userfriendly version will come prob. with IMAP/POP intergration. 
+
